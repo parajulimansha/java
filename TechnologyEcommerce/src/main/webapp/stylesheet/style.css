@@ -1,0 +1,81 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.filter-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+}
+
+.filter-sort span {
+  margin-right: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto; /* Center the product list horizontally */
+}
+
+.product-item {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-item img {
+  width: 200px;  /* Set desired width */
+  height: 200px;  /* Set desired height */
+  margin-bottom: 10px;
+}
+
+.product-info {
+  padding-top: 10px;
+  flex-direction: column;
+
+}
+product-info h3,
+.product-info p {
+  margin: 0;  /* Remove default margins */
+}
+
+/* Hide the quick buy button by default */
+.product-item .quick-buy {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 25);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Show the quick buy button on hover for ALL product items */
+.product-item:hover img {
+  transform: scale(1.1); /* Increase the image size slightly on hover */
+  transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+}

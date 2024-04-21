@@ -1,0 +1,92 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* Light background color */
+}
+
+
+.product-description {
+  max-width: 1000px; /* Limit container width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  display: flex;
+  background-color: #f5f5f5;
+
+}
+.product-details {
+  margin-top: 40px;
+  padding-left: 120px;
+
+}
+
+.product-image-wrapper {
+  width: 80%;
+  padding-left: 60px;
+}
+
+.product-image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Scale image to fill container */
+  transition: filter 0.3s ease-in-out; /* Smooth grayscale effect on hover */
+}
+
+.product-image-wrapper:hover img {
+  filter: grayscale(100%); /* Make image grayscale on hover */
+}
+
+.product-info {
+  width: 50%;
+  padding: 20px;
+  border-radius: 0px 10px 10px 0px; /* Rounded top-right corner */
+  background-color: #fff; /* White background for product info section */
+}
+
+.product-info h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.short-description {
+  font-size: 16px;
+  line-height: 1.5; /* Adjust line spacing for readability */
+  margin-bottom: 20px;
+}
+
+.specs {
+  margin-bottom: 20px;
+}
+
+.specs h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.specs ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 2; /* Two columns for specifications */
+  gap: 20px; /* Gap between columns */
+}
+
+.specs li {
+  margin-bottom: 5px;
+}
+
+.add-to-cart-button {
+  background-color: #007bff; /* Blue call to action color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+  margin-top: 20px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0062cc; /* Darker blue on hover */
+}
